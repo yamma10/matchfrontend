@@ -173,7 +173,7 @@ export default function Register() {
     <div className={styles.login}>
       <div className={styles.loginWrapper}>
         <div className={styles.loginTop}>
-          <h3 className={styles.loginLogo}>タイトル</h3>
+          <h3 className={styles.loginLogo}>佐賀でサガそう</h3>
         </div>
         {/* ここからTabで囲む */}
         <Tabs style={{textAlign: 'center'}}>
