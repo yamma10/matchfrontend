@@ -118,7 +118,7 @@ export default function Login() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginTop">
-          <h3 className="loginLogo">タイトル</h3>
+          <h3 className="loginLogo">佐賀でサガそう</h3>
         </div>
         {/* ここからTabで囲む */}
         <Tabs style={{textAlign: 'center'}}>
