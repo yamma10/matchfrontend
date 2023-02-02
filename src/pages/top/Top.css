@@ -5,7 +5,7 @@
   background-color: white;
 }
 
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 .topPageBottom {
   position: relative;
