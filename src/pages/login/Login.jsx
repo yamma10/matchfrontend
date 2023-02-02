@@ -19,6 +19,8 @@ export default function Login() {
     const { user, isFetching, error, dispatch} = useContext(AuthContext);
 
     const handleSubmit = (e) => {
+      console.log(email.current.value);
+      console.log(password.current.value)
       e.preventDefault();
       studentLoginCall(
         {
