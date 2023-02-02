@@ -41,7 +41,7 @@ export default function TalkRoom() {
   useEffect(() => {
 
     const fetchRoom = async () => {
-      const Room = await axios.get(`/message/${id}`);
+      const Room = await axios.get(`/api/message/${id}`);
       // console.log(Room.data)
       setRoom(Room.data);
     }

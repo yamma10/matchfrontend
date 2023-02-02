@@ -16,7 +16,7 @@ export default function ({Id}) {
    const fetchData = async () => {
     try {
       
-      const Data = await axios.get(`/message/latest/${Id}`);
+      const Data = await axios.get(`/api/message/latest/${Id}`);
       // console.log(Data.data);
       setData(Data.data)
     } catch (err) {

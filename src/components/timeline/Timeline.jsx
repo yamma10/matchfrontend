@@ -19,8 +19,8 @@ export default function Timeline({ username }) {
   useEffect(() => {
     const fetchPosts = async () => {
       const response = username 
-      ? await axios.get(`/posts/profile/${username}`) //プロフィールの場合
-      : await axios.get(`/posts/timeline/${user._id}`);//ホームの場合
+      ? await axios.get(`/api/posts/profile/${username}`) //プロフィールの場合
+      : await axios.get(`/api/posts/timeline/${user._id}`);//ホームの場合
       
       setPosts(
         response.data.sort((post1, post2) => {
