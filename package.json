@@ -50,5 +50,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://matchingapi.onrender.com/api"
+  "proxy": "https://matchingapi.onrender.com/api/"
 }
