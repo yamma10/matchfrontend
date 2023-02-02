@@ -24,7 +24,7 @@ export default function RoomList() {
           _id: _id,
           type: type
         }
-        const res = await axios.post(`/message/getid`, getroom);
+        const res = await axios.post(`/api/message/getid`, getroom);
         // console.log(res)
         setRooms(res.data.sort((room1, room2) => {
           return new Date(room2.updatedAt) - new Date (room1.updatedAt);

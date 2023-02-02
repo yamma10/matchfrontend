@@ -34,7 +34,7 @@ export default function Register() {
               password: password.current.value
             };
             //registerAPI
-            await axios.post("auth/teacher", teacher)
+            await axios.post("/api/auth/teacher", teacher)
             navigate("/login");
           } catch (error) {
             if (error.response && error.response.data) {
@@ -111,7 +111,7 @@ export default function Register() {
               password: password.current.value
             };
             //registerAPI
-            await axios.post("auth/student", student)
+            await axios.post("/api/auth/student", student)
             navigate("/login")
           } catch (error) {
             if (error.response && error.response.data) {

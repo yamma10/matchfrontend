@@ -23,7 +23,7 @@ export default function Post({ post }) {
   
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await axios.get(`/users/teacher/${post.userId}`);
+      const response = await axios.get(`/api/users/teacher/${post.userId}`);
       // console.log(response)
       setUser(response.data);
     };
@@ -33,7 +33,7 @@ export default function Post({ post }) {
   const handleLike = async () => {
     try {
       //いいねのAPIを叩いていく
-      await axios.put(`/posts/${post._id}/like`, {userId: loginUser._id});
+      await axios.put(`/api/posts/${post._id}/like`, {userId: loginUser._id});
     } catch (err) {
     }
     setLike(isLiked ? like - 1 : like + 1);
@@ -50,7 +50,7 @@ export default function Post({ post }) {
         teacherName: user.username
       }
 
-      const room = await axios.post("/message/room", createRoom);
+      const room = await axios.post("/api/message/room", createRoom);
       const room_id = room.data._id
 
     

@@ -41,7 +41,7 @@ export default function Settings() {
 
       try {
         //画像アップロード
-        await axios.post("/upload", data);
+        await axios.post("/api/upload", data);
         // setFile(fileName);
       } catch(err) {
         console.log(err);
@@ -62,11 +62,11 @@ export default function Settings() {
       }
       // console.log(newUser);
       if(user.type) {
-        await axios.put(`users/teacher/${newUser._id}`, newUser);
+        await axios.put(`/api/users/teacher/${newUser._id}`, newUser);
         
         localStorage.setItem("user", JSON.stringify(newUser));
       } else {
-        await axios.put(`users/student/${user._id}`, newUser);
+        await axios.put(`/api/users/student/${user._id}`, newUser);
         // studentUpdate(newUser,dispatch);
         localStorage.setItem("user", JSON.stringify(newUser));
       }
