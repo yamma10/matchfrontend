@@ -18,15 +18,15 @@ export default function Login() {
 
     const fs = require('fs');
 
-  fs.readFile('../package.json', 'utf-8', (err, data) => {
+  fs.readFile('../../package.json', 'utf-8', (err, data) => {
     if (err) {
       console.error(err);
       return;
     }
 
-  const packageJson = JSON.parse(data);
-  console.log(packageJson.proxy);
-});
+    const packageJson = JSON.parse(data);
+    console.log(packageJson.proxy);
+  });
 
     const { user, isFetching, error, dispatch} = useContext(AuthContext);
 
