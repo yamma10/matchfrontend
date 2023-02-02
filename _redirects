@@ -1,1 +1,1 @@
-/api* https://matchingapi.onrender.com/:splat 200
+/api* https://matchingapi.onrender.com/api/:splat 200
