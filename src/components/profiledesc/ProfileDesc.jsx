@@ -5,7 +5,7 @@ import "./ProfileDesc.css"
 //文字数に制限を設ける
 // 一言の文字数は300字までにする
 export default function ProfileDesc({user}) {
-  console.log(user)
+  // console.log(user)
   function checkcity(user) {
     switch(user.city) {
       case "saga": 
@@ -29,7 +29,7 @@ export default function ProfileDesc({user}) {
     }
   }
   const city = checkcity(user)
-  console.log(city);
+  // console.log(city);
 
   function checkMethod (user) {
     if (user.method) {
