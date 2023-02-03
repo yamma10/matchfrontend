@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://matchingapi.onrender.com/:splat"
+  to = "https://matchingapi.onrender.com/api/:splat"
   status = 200
   force = true
