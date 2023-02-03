@@ -58,7 +58,7 @@ export default function TalkRoom() {
     // console.log(id);
     
 
-    //このタイミングでDBから過去のトーク履歴をもってきてほしいと送信
+    //DBから過去のトーク履歴をもってきてと送信
     socket.emit('join', roomId);
 
     //いままでのトーク履歴がこれに返る
